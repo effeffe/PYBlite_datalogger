@@ -10,3 +10,6 @@ In principle, this datalogger can be used for any application.
 
 ## License notes
 Filippo Falezza, ¢2020 released under GPLv3.
+
+## Notes
+The code has been written in less than a weekend, so please feel free to modify it accordingly to the GPL license :)
