@@ -1,0 +1,33 @@
+12 bit resolution, max 3.3V
+ie ADC_voltage:ADC_value=3.3V:4096 
+DO NOT USE THE FOLLOWING PINS:
+	X1-2 (UART)
+	X5-8 (SPI)
+
+example to read (non buffered):
+
+import pyb
+import array
+adc = pyb.ADC(pyb.Pin.board.Y12)
+tim = pyb.Timer(4, freq=20000) #create 20KHz timer
+rx0 = array.array('H', (0 for i in range(20000)))
+pyb.ADC.read_timed(adc, rx0, tim)
+for n in range(len(rx0)):
+    print(rx0[n])
+
+
+open and close file:
+
+#NEED TO WRITE ON SD; OTHERWISE WE RUN OUT OF SPACE ON THE INTERNAL MEMORY
+import os,pyb,array
+adc = pyb.ADC(pyb.Pin.board.Y12)
+tim = pyb.Timer(4, freq=20000) #create 20KHz timer
+f_ = open("file.csv", "w")
+rx0 = array.array('H', (0 for i in range(20000)))
+i = 0
+while i < 31: #define seconds of acquisition-1
+    pyb.ADC.read_timed(adc, rx0, tim)
+    for item in rx0:
+        f_.write('%d\n' % (item))
+    i = i+1
+f_.close()
