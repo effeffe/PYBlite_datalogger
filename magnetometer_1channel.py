@@ -1,6 +1,6 @@
 import os,pyb,array
 adc = pyb.ADC(pyb.Pin.board.Y12)
-tim = pyb.Timer(4, freq=20000) #create 20KHz timer
+tim = pyb.Timer(4, freq=10000) #create 10KHz timer
 #Now it samples 4s at 10KHz
 rx0 = array.array('H', (0 for i in range(10000)))
 rx1 = array.array('H', (0 for i in range(10000)))
