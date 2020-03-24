@@ -1,0 +1,18 @@
+2 IC are available:
+ 
+-drv5053-q1:
+	Vcc from 2.7 to 38V
+	+23mV/mT
+	1.0V at 0mT
+	output between +0.2/+1.8V -> max (800mV)/(23mv/mT)=34.78mT
+	require 0.1uF capacitor between Vcc and GND
+
+-drv5055A1:
+	Vcc typ 3.3V,5V (max -0.3 to +7V)
+	Output half Vcc (max -0.3 to Vcc+0.3V)
+	+(100\pm5)mV/mT at 5V, +(60\pm3)mV/mT at 3.3
+	powered at 3.3V:
+		Vout = 1.65V
+		Bmax = 2500/(0.100mV/mT)=25.0mT at 5V,
+		Bmax = 1650mV/(60mV/mT)=27.5mT at 3.3V,
+	recomended 0.01uF (at least) between Vcc and GND
