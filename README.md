@@ -9,7 +9,7 @@ It samples the magnetic field on two probes, which where used perpendicular one 
 In principle, this datalogger can be used for any application.
 
 ## License notes
-Author: Filippo Falezza, ¢2020 released under GPLv3.
+Author: Filippo Falezza, ¢2020 released under GPLv3. \
 Contributor and co-writer: Eric Liu, with authorship rights, ¢ 2020
 
 ## Notes
