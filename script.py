@@ -1,3 +1,7 @@
+'''
+Author: Filippo Falezza
+Co-owner and contributor: Eric Liu
+'''
 from pyb import ADC,Pin,Timer,main
 from array import array
 from time import sleep
