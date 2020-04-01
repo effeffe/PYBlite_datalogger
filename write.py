@@ -1,3 +1,8 @@
+
+'''
+Author: Filippo Falezza
+Co-owner and contributor: Eric Liu
+'''
 #Write v_ref
 V_ = open("/sd/voltage_ref-F6_dist.txt","w")
 V_.write('%f\n' % (pyb.ADCAll(12).read_vref()))
