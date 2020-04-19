@@ -9,8 +9,10 @@ It samples the magnetic field on two probes, which where used perpendicular one 
 In principle, this datalogger can be used for any application.
 
 ## License notes
-Author: Filippo Falezza, ¢2020 released under GPLv3. \
-Contributor and co-writer: Eric Liu, with authorship rights, ¢ 2020
+Unless otherwise explicitly noted,  
+Author: Filippo Falezza, ¢2020 released under GPLv3.  
+Contributor and co-writer: Eric Liu, with authorship rights, ¢ 2020  
+All the files in the pyblite_v1.0 are property of MicroPython and the relative project.
 
 ## Notes
 The code has been written in less than a weekend, so please feel free to modify it accordingly to the GPL license :)
