@@ -1,3 +1,6 @@
+'''
+Author: Filippo Falezza ¢2020
+'''
 import os,pyb,array
 adc = pyb.ADC(pyb.Pin.board.Y12)
 tim = pyb.Timer(4, freq=10000) #create 10KHz timer
