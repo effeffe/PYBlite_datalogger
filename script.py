@@ -1,6 +1,6 @@
 '''
 Author: Filippo Falezza
-Co-owner and contributor: Eric Liu
+Co-owner: Eric Liu
 '''
 from pyb import ADC,Pin,Timer,main
 from array import array
