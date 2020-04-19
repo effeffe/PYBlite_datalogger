@@ -2,6 +2,9 @@
 '''
 Author: Filippo Falezza
 Co-owner: Eric Liu
+
+Note that the code needs to be executeed automatically if possible),
+otherwise copy/paste needs to be done in 3 blocks, each one up to the comment `#stop copy here`
 '''
 #Write v_ref
 V_ = open("/sd/voltage_ref-F6_dist.txt","w")
@@ -22,3 +25,4 @@ for item1 in list1:
 		f1.write('%d\n' % (i1))
 #stop copy here
 f1.close()
+#stop copy here
