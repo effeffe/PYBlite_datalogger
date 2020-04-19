@@ -1,7 +1,6 @@
 
 '''
 Author: Filippo Falezza
-Co-owner and contributor: Eric Liu
 '''
 #Write v_ref
 V_ = open("/sd/voltage_ref-F6_dist.txt","w")
